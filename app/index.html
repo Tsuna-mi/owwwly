@@ -30,21 +30,16 @@
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<!-- Add your site or application content here -->
+		<!-- Application Content -->
 
-		<div class="index" style="width:100%;height:100%;overflow:hidden;">
-			<div class="indexcontainer" ng-view style="width:100%;height:100%;overflow:hidden;"></div>
+		<div class="index">
+			<!-- @begin MAIN - -->
+			<main>
+				<div class="indexcontainer" ng-view></div>
+			</main>
+			<!-- @end MAIN -->
 		</div>
 		
-		<!-- @begin MAIN - -->
-		<main>
-			<p>Go to <a href="#/main"> About </a></p>
-			<div ng-view></div>		
-		</main>
-		<!-- @end MAIN -->
-
-
-
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 		<script>
 			 !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){

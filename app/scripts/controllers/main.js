@@ -14,5 +14,6 @@ angular.module('owwwlyApp',['ngRoute'])
 			'AngularJS',
 			'Karma'
 		];
-		console.log("test MainCtrl");		
+		console.log('test MainCtrl');
+		$scope.test = 'test';
 	}]);

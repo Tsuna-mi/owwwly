@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module("appConfig", [])
+angular.module('appConfig', [])
 
 	.config(['$routeProvider', function( $routeProvider ){
 
@@ -15,10 +15,15 @@ angular.module("appConfig", [])
 					controller: 'MainCtrl',
 					controllerAs: 'main'
 				})
-				.when('/aut/login', {
+				.when('/users/login', {
 					templateUrl: 'views/login.html',
 					controller: 'LoginController',
 					controllerAs: 'login'
+				})
+				.when('/users/signup', {
+					templateUrl: 'views/signup.html',
+					controller: 'SignupController',
+					controllerAs: 'signup'
 				})
 
 				// .when('/about', {
@@ -31,4 +36,4 @@ angular.module("appConfig", [])
 					redirectTo: '/'
 				});
 
-	}])
+	}]);

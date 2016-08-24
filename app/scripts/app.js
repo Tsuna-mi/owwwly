@@ -7,7 +7,7 @@
  * # owwwlyApp
  * * Main module of the application.
  */
-angular.module('owwwlyApp', ['appConfig'])
+angular.module('owwwlyApp', ['appConfig']);
 	
 	// .module('owwwlyApp', [
 	// 	'appConfig'.
