@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+</head>
+<body>
+	<div>
+	<!-- falta logo -->
+		<a href="/"><img src="https://padlet-res.cloudinary.com/image/fetch/a_exif,c_fit,dpr_auto,h_84,w_84/https%3A%2F%2Fassets.padletcdn.com%2Fassets%2Fcrane_196x196-d37ea22f2ba72232faef380b002b4c99.png" ww-retina-src="https://padlet-res.cloudinary.com/image/fetch/a_exif,c_fit,dpr_auto,h_168,w_168/https%3A%2F%2Fassets.padletcdn.com%2Fassets%2Fcrane_196x196-d37ea22f2ba72232faef380b002b4c99.png" height="84" width="84" id="crane-monogram" alt="Padlet" /></a>
+
+		<h1>Solicitud de contraseña enviada</h1>
+		<div ng-controller="ForgotController as forgot">
+			<div ng-hide="forgot.submittedSuccessfully">
+			<form role="form" method="post" name="forgot.forgotForm" ng-submit="forgot.submitForgotInfo()" novalidate>
+				<div class="form-group" ng-class="{'has-error': forgot.forgotForm.errors.email}">
+					<label for="input-email" class="shim-placeholder">Correo o nombre de usuario</label>
+					<input id="input-email" autofocus class="form-control" type="text" placeholder="Correo o nombre de usuario" name="email" ng-model="forgot.info.email" ng-change="forgot.forgotForm.errors.email=undefined" ww-focus="forgot.forgotForm.errors.email" />
+					<p class="help-block" ng-cloak ng-show="forgot.forgotForm.errors.email">{{ forgot.forgotForm.errors.email }}</p>
+				</div>
+				<div class="form-group clearfix">
+					<button class="btn btn-primary btn-block" type="submit" ng-disabled="forgot.state=='submitting'">Submit</button>
+					<a class="btn btn-block btn-sm btn-link" href="https://padlet.com/auth/login">No importa</a>
+				</div>
+			</form>
+		</div>
+		<div class="alert alert-success" ng-cloak ng-show="forgot.submittedSuccessfully && forgot.emailSentTo=='user'">
+			<p>Te hemos enviado un correo electrónico. Éste te dirá cómo cambiar tu contraseña</p>
+			<p>
+				<button class="btn btn-primary" ng-click="forgot.submitForgotInfo()">Reenviar</button>
+			</p>
+		</div>
+		<div class="alert alert-success" ng-cloak ng-show="forgot.submittedSuccessfully && forgot.emailSentTo=='admin'">
+			<p>Hemos informado a su administrador que has olvidado su contraseña. Por favor contactelos para obtener su nueva contraseña</p>
+			<p>
+				<a class="btn btn-primary" href="https://padlet.com/auth/login">Entrar ahora</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="text-center switch-form">
+		¿Eres nuevo aquí? <a href="https://padlet.com/auth/signup">Registrarse</a>
+	</div>
+</div>
+
+	
+</body>
+</html>

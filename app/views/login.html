@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+</head>
+<body>
+	<div>
+		<!-- falta logo -->
+		<h1>Entrar a Padlet</h1>
+		<div ng-controller="LoginController as login" ng-init="login.info.clientId='';login.info.redirectUri=''">
+			<form role="form" method="post" name="login.loginForm" ng-submit="login.submitLoginInfo()" novalidate>
+				<div class="form-group">
+					<a href="https://padlet.com/auth/google_oauth2?locale_redirect=no&tenant_id=1" class="btn btn-block btn-social-googleplus">Entrar con Google</a>
+					<a href="/auth/facebook" class="btn btn-block btn-social-facebook">Entrar con Facebook</a>
+				</div>
+				<hr />
+				<div class="form-group" ng-class="{'has-error': login.loginForm.errors.email}">
+					<label for="input-email" class="shim-placeholder">Correo o nombre de usuario</label>
+					<input id="input-email" class="form-control" type="text" placeholder="Correo o nombre de usuario" name="email" ng-model="login.info.email" ng-change="login.loginForm.errors.email=undefined" ww-focus="login.loginForm.errors.email" />
+					<p class="help-block" ng-cloak ng-show="login.loginForm.errors.email">{{ login.loginForm.errors.email }}</p>
+				</div>
+				<div class="form-group" ng-class="{'has-error': login.loginForm.errors.password}">
+					<label for="input-password" class="shim-placeholder">Contraseña</label>
+					<input id="input-password" class="form-control" type="password" placeholder="Contraseña" name="password" ng-model="login.info.password" ng-change="login.loginForm.errors.password=undefined" ww-focus="login.loginForm.errors.password" />
+					<p class="help-block" ng-cloak ng-show="login.loginForm.errors.password">{{ login.loginForm.errors.password }}</p>
+				</div>
+				<div class="form-group clearfix">
+					<button class="btn btn-primary pull-right" type="submit" ng-disabled="login.state=='submitting'">Entrar</button>
+					<small class="pull-left"><a class="btn btn-sm btn-link" href="https://padlet.com/auth/forgot">¿Olvidó la contraseña?</a></small>
+				</div>
+			</form>
+		</div>
+
+		<div class="text-center switch-form">
+			¿Eres nuevo aquí? <a href="https://padlet.com/auth/signup">Registrarse</a>
+		</div>
+	</div>
+	
+</body>
+</html>
