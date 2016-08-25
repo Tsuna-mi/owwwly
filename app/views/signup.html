@@ -1,39 +1,41 @@
-<div class="container signup card col-sm-12 col-lg-8 col-xs-5">
-	<section>
-		<header>
-			<div class='owwwly-logo'>
-				<img class="img-responsive" src="images/buho.png" alt="Owwwly logo" />
-			</div>
-			<h1><span>sign up</span></h1>
-		</header>
-		<div class="signup-form" ng-controller="SignupController as signup">
-			<form action="" method="post" class="signup" ng-submit="" novalidate>
-				<div class="form-group ">
-					<input type="text" class="form-control" ng-model="user.username" placeholder="Username" id="Username" autofocus="autofocus" required="required">
-					<i class="fa fa-user"></i>
+<div class="container">
+	<div class="container signup card col-sm-12 col-md-8 col-lg-6">
+		<section>
+			<header>
+				<div class='owwwly-logo'>
+					<img class="img-responsive" src="images/buho.png" alt="Owwwly logo" />
 				</div>
-				<div class="form-group ">
-					<input type="text" class="form-control" ng-model="user.email" placeholder="Email" id="Email" required="required">
-					<i class="fa fa-envelope"></i>
-				</div>
-				<div class="form-group log-status">
-					<input type="password" class="form-control" ng-model="user.password" placeholder="Password" id="Passwod" autocomplete="off" required="required">
-					<i class="fa fa-lock"></i>
-				</div>
-				<div class="form-group">
-					<input type="password" class="form-control" ng-model="user.passwordConfirmation" placeholder="Password confirmation" id="PasswodConfirmation" autocomplete="off" required="required">
-					<i class="fa fa-lock"></i>
-				</div>
-
-				<div class="form-group clearfix">
-					<button class="btn btn-primary pull-right" type="submit" ng-disabled="">Sign up</button>
-					<!-- /access/login -->
-					<div class="pull-left">
-						<span class='login-question'>Already have an account?</span>
-						<a class="btn btn-sm btn-link" href="access/login">Log in</a>
+				<h1><span>sign up</span></h1>
+			</header>
+			<div class="signup-form" ng-controller="SignupController as signup">
+				<form action="" method="post" class="signup" ng-submit="" novalidate>
+					<div class="form-group ">
+						<input type="text" class="form-control" ng-model="user.username" placeholder="Username" id="Username" autofocus="autofocus" required="required">
+						<i class="fa fa-user"></i>
 					</div>
-				</div>
-			</form>
-		</div>
-	</section>
+					<div class="form-group ">
+						<input type="text" class="form-control" ng-model="user.email" placeholder="Email" id="Email" required="required">
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="form-group log-status">
+						<input type="password" class="form-control" ng-model="user.password" placeholder="Password" id="Passwod" autocomplete="off" required="required">
+						<i class="fa fa-lock"></i>
+					</div>
+					<div class="form-group">
+						<input type="password" class="form-control" ng-model="user.passwordConfirmation" placeholder="Password confirmation" id="PasswodConfirmation" autocomplete="off" required="required">
+						<i class="fa fa-lock"></i>
+					</div>
+
+					<div class="form-group clearfix">
+						<button class="btn btn-primary pull-right" type="submit" ng-disabled="">Sign up</button>
+						<!-- /access/login -->
+						<div class="pull-left">
+							<span class='login-question'>Already have an account?</span>
+							<a class="btn btn-sm btn-link" href="access/login">Log in</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
 </div>
