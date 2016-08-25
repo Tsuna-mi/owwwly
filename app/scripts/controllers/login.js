@@ -1,4 +1,4 @@
 'use strict';
 
-angular.module('owwwlyApp',['ngRoute'])
+angular.module('owwwlyApp')
 	.controller('LoginController',[]);

@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the owwwlyApp
  */
-angular.module('owwwlyApp',['ngRoute'])
+angular.module('owwwlyApp')
 	.controller('MainCtrl',['$scope', function ($scope) {
 		this.awesomeThings = [
 			'HTML5 Boilerplate',
