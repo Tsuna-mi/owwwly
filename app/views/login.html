@@ -1,19 +1,19 @@
 <div class="register">
 	<p>New user?</p>
-	<a class="btn btn-outline-primary pull-right" href="#/users/sign_up">Register</a>
+	<a class="btn btn-outline-primary pull-right" href="access/signup">Register</a>
 </div>
-<div class="container user-login card col-sm-12 col-lg-8 col-xs-5">
+<div class="container login card col-sm-12 col-lg-8 col-xs-5">
 	<section>
 		<header>
 			<div class='owwwly-logo'>
-				<img src="images/buho.png" alt="Owwwly logo" />
+				<img class="img-responsive" src="images/buho.png" alt="Owwwly logo" />
 			</div>
 			<h1><span>log in</span></h1>
 		</header>
 		<div class="login-form" ng-controller="LoginController as login">
 			<form action="" method="post" class="login" ng-submit="" novalidate>
 				<div class="form-group">
-					<!-- /users/facebook -->
+					<!-- /access/facebook -->
 					<a href="#" class="btn btn-block btn-social-facebook">Log in with Facebook</a>
 				</div>
 				<div class="form-group ">
@@ -30,7 +30,7 @@
 				</div>
 				<div class="form-group clearfix">
 					<button class="btn btn-primary pull-right" type="submit" ng-disabled="">Log in</button>
-					<!-- users/forgot -->
+					<!-- /access/forgot -->
 					<a class="btn btn-sm btn-link pull-left" href="#">Forgot your password?</a>
 				</div>
 			</form>

@@ -1,5 +1,6 @@
 {
   "name": "owwwly",
+  "version": "1.0",
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -42,6 +43,6 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "grunt-contrib-pug": "^1.0.0"
+    
   }
 }

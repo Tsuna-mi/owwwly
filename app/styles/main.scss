@@ -1,6 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 @import "partials/_cards";
+@import "partials/_mixins";
+
+//FONTS
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Caveat:400,700");
+
 
 .browsehappy {
 	margin: 0.2em 0;
