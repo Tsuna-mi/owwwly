@@ -25,6 +25,12 @@ angular.module('appConfig', [])
 					controller: 'SignupController',
 					controllerAs: 'signup'
 				})
+				.when('/access/forgot', {
+					templateUrl: 'views/forgot.html',
+					controller: 'ForgotController',
+					controllerAs: 'forgot'
+				})
+
 
 				// .when('/about', {
 				// 	templateUrl: 'views/about.html',
