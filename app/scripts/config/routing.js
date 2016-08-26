@@ -30,6 +30,11 @@ angular.module('appConfig', [])
 					controller: 'ForgotController',
 					controllerAs: 'forgot'
 				})
+				.when('/boards', {
+					templateUrl: 'views/boards.html',
+					controller: 'BoardsController',
+					controllerAs: 'boards'
+				})
 
 
 				// .when('/about', {
