@@ -1,10 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	
-</body>
-</html>
+<!-- "idEvent": 1,
+		"title":"Cena Fin de Curso",
+		"type": "Restaurant",
+		"description": "Celebraremos el final de curso de la primera promoción del Bootcamp de Desarrollo Web de SkylabCoders",
+		"date":"31/08/2016",
+		"city":"Barcelona",
+		"link": "",
+		"image": "../imgages/PrimeraPromocionSkylabCoders.jpg" -->
+<div class="container">
+	<div class="create card col-sm-12 col-md-10 col-lg-8 col-xl-6">
+		<section>
+			<header>
+				<div class='owwwly-logo'>
+					<img class="img-responsive" src="images/buho.png" alt="Owwwly logo" />
+				</div>
+				<h1><span>create a board with your event</span></h1>
+			</header>
+			<div class="create-form" ng-controller="CreateBoardController as create">
+				<form action="" method="post" class="create" ng-submit="" novalidate>
+					<!-- title Event-->
+					<div class="form-group row">
+						<label for="title" class="col-xs-2 col-form-label">Title</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="text" value="{{title}}" id="title" required>
+						</div>
+					</div>
+					<!-- type Event-->
+					<div class="form-group row">
+						<label for="typeEvent" class="col-xs-2 col-form-label">SelectEventType</label>
+						<div class="col-xs-10">
+							<select id="SelectEventType" class="form-control">Type
+								<option>Choice the type of your event</option>
+								<option>Restaurant</option>
+								<option>Movie</option>
+								<option>Concert</option>
+								<option>Beach</option>
+								<option>Nigth</option>
+								<option>Other</option>
+							</select>
+						</div>
+					</div>
+					<!-- Description Event -->
+					<div class="form-group row">
+						<label for="descriptionEvent" class="col-xs-2 col-form-label">Description</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="text" value="{{description}}" id="descriptionEvent">
+						</div>
+					</div>
+					<!-- Date Event -->
+					<div class="form-group row">
+						<label for="dateEvent" class="col-xs-2 col-form-label">Date</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="date" value="{{date}}" id="dateEvent">
+						</div>
+					</div>
+					<!-- Time Event -->
+					<div class="form-group row">
+						<label for="timeEvent" class="col-xs-2 col-form-label">Time</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="time" value="{{time}}" id="dateEvent">
+						</div>
+					</div>
+					<!-- City Event -->
+					<div class="form-group row">
+						<label for="cityEvent" class="col-xs-2 col-form-label">City</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="text" value="{{city}}" id="cityEvent">
+						</div>
+					</div>
+					<!-- URL Event -->
+					<div class="form-group row">
+						<label for="urlEvent" class="col-xs-2 col-form-label">URL</label>
+						<div class="col-xs-10">
+							<input class="form-control" type="url" value="{{url}}" id="urlEvent">
+						</div>
+					</div>
+					<!-- Image Event -->
+					<div class="form-group row">
+						<label class="custom-file">
+							<input type="file" id="file" class="custom-file-input">
+							<span class="custom-file-control"></span>
+						</label>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+</div>
