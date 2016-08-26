@@ -35,6 +35,12 @@ angular.module('appConfig', [])
 					controller: 'BoardsController',
 					controllerAs: 'boards'
 				})
+				.when('/create', {
+					templateUrl: 'views/create.html',
+					controller: 'CreateBoardController',
+					controllerAs: 'create'
+				})
+
 
 
 				// .when('/about', {
