@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="register">
-		<p class="pull-right text-muted">New user?<a class="btn btn-success bregister pull-right" href="access/signup">Register</a></p>
+		<p class="pull-right text-muted">New user?<a class="btn btn-success bregister pull-right" href="#/access/signup">Register</a></p>
 		
 	</div>
 	<div class="container login card col-sm-12 col-md-8 col-lg-6">
@@ -15,7 +15,7 @@
 				<form action="" method="post" class="login" ng-submit="" novalidate>
 					<div class="form-group">
 						<!-- /access/facebook -->
-						<a href="#" class="btn btn-warning btn-social-facebook">Log in with Facebook</a>
+						<a href="#dfadsfa" class="btn btn-warning btn-social-facebook">Log in with Facebook</a>
 					</div>
 					<div class="form-group ">
 						<input type="text" class="form-control" ng-model="user.username" placeholder="Username" id="Username" autofocus="autofocus" required="required">
@@ -25,17 +25,15 @@
 						<input type="password" class="form-control" ng-model="user.password" placeholder="Password" id="Password" autocomplete="off" required="required">
 						<i class="fa fa-lock"></i>
 					</div>
-					<div class="form-group">
-						<div class="checkbox">
-							<label>
-								<input type="checkbox" value="1" name="remember_me" id="rememberMe"> Remember me
-							</label>
-						</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="checkbox" value="1" name="remember_me" id="rememberMe" class="form-check-input"> Remember me
+						</label>
 					</div>
 					<div class="form-group clearfix">
 						<button class="btn btn-primary pull-right" type="submit" ng-disabled="">Log in</button>
 						<!-- /access/forgot -->
-						<a class="btn btn-sm btn-link pull-left" href="#">Forgot your password?</a>
+						<a class="btn btn-sm btn-link pull-left" href="#/access/forgot">Forgot your password?</a>
 					</div>
 				</form>
 			</div>

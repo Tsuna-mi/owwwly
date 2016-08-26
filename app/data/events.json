@@ -1,0 +1,13 @@
+[
+	{
+		"idEvent": 1,
+		"title":"Cena Fin de Curso",
+		"type": "Restaurant",
+		"description": "Celebraremos el final de curso de la primera promoción del Bootcamp de Desarrollo Web de SkylabCoders",
+		"date":"31/08/2016",
+		"city":"Barcelona",
+		"link": "",
+		"image": "../imgages/PrimeraPromocionSkylabCoders.jpg"
+	}
+]
+
