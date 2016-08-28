@@ -15,6 +15,11 @@ angular.module('appConfig', [])
 					controller: 'MainCtrl',
 					controllerAs: 'main'
 				})
+				.when('/about', {
+					templateUrl: 'views/about.html',
+					controller: 'MainCtrl',
+					controllerAs: 'main'
+				})
 				.when('/access/login', {
 					templateUrl: 'views/login.html',
 					controller: 'LoginController',
