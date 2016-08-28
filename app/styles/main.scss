@@ -11,9 +11,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
 @import url("https://fonts.googleapis.com/css?family=Caveat:400,700");
 
-html, body{
+html, body,.index, .indexcontainer{
 	width: 100%;
 	height: 100%;
+	display: flex;
 }
 
 .browsehappy {
@@ -26,12 +27,6 @@ html, body{
 body {
 	margin: 0;
 	padding: 10px 25px;
-}
-
-.index, .indexcontainer{
-	width:100%;
-	height:100%;
-	overflow:hidden;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
