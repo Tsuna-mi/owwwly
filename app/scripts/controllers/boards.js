@@ -5,5 +5,6 @@ angular.module('owwwlyApp')
 		$http.get('data/events.json')
 		.success(function(data){
 			$scope.events = data;
+
 		});
 	}]);

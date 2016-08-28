@@ -16,7 +16,7 @@
 		"type": "Cine",
 		"description": "Ir a ver una peli",
 		"date":"",
-		"hour":"",
+		"hour":"22:00",
 		"city":"Barcelona",
 		"link": "",
 		"image": ""
