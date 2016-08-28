@@ -3,6 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "partials/_bgGradient";
 @import "partials/_cards";
 @import "partials/_mixins";
+@import "partials/_eventCard";
 
 // @import "partials/_button-file";
 
@@ -23,8 +24,8 @@ html, body{
 }
 
 body {
-	padding: 0;
 	margin: 0;
+	padding: 10px 25px;
 }
 
 .index, .indexcontainer{
@@ -116,15 +117,19 @@ body {
 }
 
 /* Width images */
-img{width: 100%}
+.img-full{
+	width: 100%;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+	.body{
+		padding: 25px 50px;
+	}
 	.container {
 		max-width: 730px;
 	}
 
-	/* Remove the padding we set earlier */
 	.header,
 	.marketing,
 	.footer {

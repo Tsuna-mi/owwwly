@@ -8,7 +8,18 @@
 		"hour":"21:00:00",
 		"city":"Barcelona",
 		"link": "",
-		"image": "../imgages/PrimeraPromocionSkylabCoders.jpg"
+		"image": "images/PrimeraPromocionSkylabCoders.jpg"
+	},
+	{
+		"idEvent": 2,
+		"title":"Ir al cine",
+		"type": "Cine",
+		"description": "Ir a ver una peli",
+		"date":"",
+		"hour":"",
+		"city":"Barcelona",
+		"link": "",
+		"image": ""
 	}
 ]
 
