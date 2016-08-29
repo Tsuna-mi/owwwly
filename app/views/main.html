@@ -1,8 +1,8 @@
 <div class="main">
 	<div class="header clearfix">
 		
-		<div class='owwwly-logo pull-left'>
-			<img class="img-responsive" src="images/buho.png" alt="Owwwly logo" />
+		<div class='logo pull-left'>
+			<div ng-include="'views/owwwlyLogo.html'"></div>
 		</div>
 		<nav class="pull-right">
 			<ul class="nav nav-pills">
@@ -10,17 +10,16 @@
 					<a class="nav-link" href="#/access/signup">sign up</a>
 				</li>
 				<li class="nav-item blogin">
-					<a class="nav-link" href="#/access/login">login</a>
+					<a class="nav-link" href="#/access/login">log in</a>
 				</li>
 			</ul>
 		</nav>
-		<h3 class="text-muted">Owwwly app</h3>
 	</div>
 	<ng-include="'owwwlyLogo.html'"></ng-include>
 
 	<div class="jumbotron">
-		<div class='owwwly-logo'>
-			<img class="img-responsive" src="images/buho.png" alt="Owwwly logo" />
+		<div class='logo'>
+			<div ng-include="'views/owwwlyLogo.html'"></div>
 		</div>
 
 		<h1 class="display-3">No more headaches planning events</h1>

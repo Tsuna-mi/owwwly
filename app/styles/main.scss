@@ -51,8 +51,18 @@ body {
 		display: inline-block;
 	}
 
-	.owwwly-logo img{
-		width: 20%;
+	.logo{
+		svg{
+			max-height: 80px;
+			width: 100px;
+			.text path{
+				fill: tomato;
+			}
+			.textShadow path{
+				fill: #d68a38;
+			}
+		}
+		
 	}
 
 	nav{
@@ -81,19 +91,25 @@ body {
 	background-color: transparent;
 	margin: 0 auto;
 	
-	.owwwly-logo {
+	.logo {
 		margin: 0 auto;
-	
-		img{
-			width: 25%;
-			display: inline-block;
+		svg{
+			max-height: 280px;
+			.text path{
+				fill: tomato;
+			}
+			.textShadow path{
+				fill: #d68a38;
+			}
 		}
+		
 	}
 
 	h1{
 		font-family: caveat, verdana;
 		margin-bottom:40px;
 		line-height: .9em;
+		color: white;
 	}
 
 	.btn {
